@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  height: 50px;
+  padding: 0 3rem;
+}
+
+.logoHeader {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: floatInLeft 0.8s ease-out forwards;
+}
+
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 3em;
+  padding: 0;
+  margin: 0;
+  animation: floatInRight 0.8s ease forwards;
+}
+
+.header nav li a {
+  display: block;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  padding: 15px 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header nav ul a:hover {
+  background-color: #fff;
+  color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* THIS IS FOR THE NAVBAR RESPONSIVENESS */
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 1.5rem 1rem;
+    gap: 3rem;
+  }
+
+  .logoHeader {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .header nav li a {
+    font-size: 2rem;
+    padding: 20px 20px;
+  }
+}
+
+/* THIS IS FOR THE NAVBAR ANIMATIONS */
+@keyframes floatInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

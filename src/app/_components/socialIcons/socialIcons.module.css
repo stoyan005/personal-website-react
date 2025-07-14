@@ -1,0 +1,14 @@
+.icons svg {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.icons svg:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

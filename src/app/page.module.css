@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.logoHeader {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: floatInLeft 0.8s ease-out forwards;
+}
+
+/* THIS IS FOR THE LEFT-SIDE CONTAINER */
+.container1 {
+  display: flex;
+  height: 85vh;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatUp 0.8s ease-out forwards;
+}
+
+.intro {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.intro h2 {
+  font-size: 1.25rem;
+  color: rgb(119, 114, 114);
+  font-weight: bold;
+}
+
+.iconsSocial {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+/* THIS IS FOR THE RIGHT-SIDE CONTAINER */
+.rightSide {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatUp 0.8s ease-out forwards;
+}
+
+.uni {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.uni h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.uni h2 {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* THIS IS ANIMATION FOR BOTH CONTAINERS*/
+@keyframes floatUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.languages {
+  font-weight: 600;
+  font-size: 2rem;
+  border-right: 2px solid #fff;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
